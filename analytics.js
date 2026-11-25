@@ -4,8 +4,9 @@
   if (!config?.enabled || config.provider !== 'umami' || !config.websiteId || !config.scriptUrl) return;
   const restricted = navigator.globalPrivacyControl === true || navigator.doNotTrack === '1' || window.doNotTrack === '1';
   const local = ['localhost', '127.0.0.1', '[::1]'].includes(location.hostname) || location.protocol !== 'https:';
+  const outsideDomain = !config.domains?.includes(location.hostname);
   const readDisabled = () => { try { return localStorage.getItem('ntc-analytics-disabled') === 'true'; } catch { return false; } };
-  let disabled = restricted || local || readDisabled();
+  let disabled = restricted || local || outsideDomain || readDisabled();
   let ready = false;
   let loaded = false;
   const pending = [];
@@ -48,14 +49,14 @@
   function updateControl() {
     document.querySelectorAll('[data-analytics-toggle]').forEach(button => {
       button.hidden = false;
-      button.disabled = restricted || local;
+      button.disabled = restricted || local || outsideDomain;
       const vi = document.documentElement.lang === 'vi';
       button.textContent = disabled ? (vi ? 'Thống kê: tắt' : 'Analytics: off') : (vi ? 'Tắt thống kê' : 'Disable analytics');
       button.setAttribute('aria-pressed', String(!disabled));
     });
   }
   document.querySelectorAll('[data-analytics-toggle]').forEach(button => button.addEventListener('click', () => {
-    if (restricted || local) return;
+    if (restricted || local || outsideDomain) return;
     disabled = !disabled;
     try { localStorage.setItem('ntc-analytics-disabled', String(disabled)); } catch { /* Optional preference. */ }
     if (disabled) pending.length = 0;

@@ -85,11 +85,11 @@ test('generated notes have both languages, project links and distinct metadata',
   }
 });
 
-test('Umami is off by default, honors privacy signals and only sends explicit safe fields', async () => {
+test('Umami can be disabled, honors privacy signals and only sends explicit safe fields', async () => {
   const analytics = await readFile(resolve(root, 'analytics.js'), 'utf8');
   const config = JSON.parse(await readFile(resolve(root, 'site.config.json'), 'utf8'));
   const disabled = domFor('<button data-analytics-toggle hidden></button>');
-  disabled.window.NTC_SITE = config;
+  disabled.window.NTC_SITE = { ...config, analytics: { ...config.analytics, enabled: false } };
   disabled.window.eval(analytics);
   assert.equal(disabled.window.document.querySelector('script'), null);
   disabled.window.close();
@@ -102,6 +102,11 @@ test('Umami is off by default, honors privacy signals and only sends explicit sa
     assert.equal(dom.window.document.querySelector('script'), null);
     dom.window.close();
   }
+  const preview = domFor('<button data-analytics-toggle hidden></button>', 'https://preview.example/');
+  preview.window.NTC_SITE = enabled;
+  preview.window.eval(analytics);
+  assert.equal(preview.window.document.querySelector('script'), null);
+  preview.window.close();
   const dom = domFor('<button data-analytics-toggle hidden></button>', 'https://portfolio.example/projects/iam/?email=private@example.test#secret');
   dom.window.NTC_SITE = enabled;
   const events = [];

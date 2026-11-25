@@ -39,7 +39,7 @@ The evaluator lives in `lib/iam-policy/` with its own package metadata, README, 
 
 ## Optional analytics
 
-Analytics is disabled in `site.config.json`. No tracker is loaded and no analytics requests are sent in the default configuration. An Umami account/site has not been created or connected.
+Umami is configured in `site.config.json` for `portfolio-gray-nu-81.vercel.app`, using the public tracking code supplied by the owner. Only this HTTPS production domain can load the tracker. Localhost, preview domains, DNT/GPC and visitor opt-out remain excluded. Set `analytics.enabled` to `false` to disable it entirely.
 
 After creating your own Umami website, copy its public script URL and website ID into:
 

@@ -9,10 +9,10 @@
     "hours": { "en": "Working hours by arrangement", "vi": "Giờ làm việc sẽ trao đổi" }
   },
   "analytics": {
-    "enabled": false,
+    "enabled": true,
     "provider": "umami",
-    "scriptUrl": "",
-    "websiteId": "",
-    "domains": []
+    "scriptUrl": "https://cloud.umami.is/script.js",
+    "websiteId": "19dd80c7-7469-46c5-ad89-082a4f653920",
+    "domains": ["portfolio-gray-nu-81.vercel.app"]
   }
 }

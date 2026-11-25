@@ -6,7 +6,7 @@
 - Independent policy module with README, tests, MIT license and no private/company source.
 - CV PDF generation during the static build, in English and Vietnamese, from the actual `resume.html` DOM and shared translations/CSS.
 - PDF verification: one page in each language, all résumé paragraphs present, and rendered-page inspection.
-- Optional Umami adapter, disabled by default, with event allowlists, URL-data minimization, privacy signals and an opt-out control when configured.
+- Umami configured for the confirmed production domain, with event allowlists, URL-data minimization, privacy signals and an opt-out control. Local and preview domains are excluded.
 - Confirmed “Open to remote backend roles”, Vietnam/UTC+7 and working hours by arrangement in both languages.
 - Static Markdown blog with three bilingual technical notes, distinct page metadata and homepage links.
 - Brand kit: avatar, monograms, LinkedIn banner, GitHub social image, shared tagline and palette; CV/web/social image updated.
@@ -15,7 +15,7 @@
 
 | Item | Remaining input/action |
 | --- | --- |
-| Live analytics | Create an Umami account/site, supply the public script URL and website ID, set the production domain and enable configuration. The current build sends no analytics. |
+| Live analytics verification | Production domain and public Website ID are configured. After Vercel publishes this change, confirm real visits/events in the owner's Umami dashboard. No synthetic production events are sent by tests. |
 | Account branding | Upload the prepared images to GitHub/LinkedIn and choose the GitHub social preview. Profile tools/browser access were unavailable; no accounts were changed. |
 | Separate open-source repository | The library is ready in `lib/iam-policy/`. A separate GitHub repository and npm publication have not been created. The connected GitHub tool set does not expose repository creation, and `gh` is not installed. |
 | Production PDF/hosting verification | Windows PDF generation is verified. Execute the configured Linux build on Vercel and verify the published PDF URLs after deployment. |
