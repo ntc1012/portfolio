@@ -5,3 +5,8 @@ tmp/
 .env
 .env.*
 dist/
+/blog/
+/site-config.js
+/assets/resume-en.pdf
+/assets/resume-vi.pdf
+/output/

@@ -18,6 +18,12 @@ This repository is my personal portfolio: a place to introduce myself, share my 
 
 I've also built a [music streaming application](https://github.com/ntc1012/webplayingmusic_fixed) and a C# desktop application for camera shop management.
 
+I'm **open to remote backend roles**, based in Vietnam (UTC+7). Working hours can be discussed.
+
+### A small open-source tool
+
+[IAM Policy](lib/iam-policy) is a dependency-free, MIT-licensed policy evaluator behind the portfolio's interactive sandbox. It demonstrates default-deny decisions, ownership/team scopes and separation of duties, with independent tests. It contains newly written educational code rather than company source.
+
 ## My toolkit
 
 - **Languages:** Python, JavaScript, C#
@@ -32,6 +38,9 @@ A brief introduction leads into selected projects, my experience, and the tools 
 - English by default, with a Vietnamese version.
 - Recruiter and Engineer perspectives for a quick overview or a closer technical look.
 - A custom SVG avatar, light and dark themes, and reduced-motion support.
+- A browser-only IAM permission sandbox using fictitious records.
+- English and Vietnamese PDF résumés generated from the same `resume.html` content during the build.
+- Three bilingual technical notes, compiled from Markdown without a frontend framework.
 - Built with HTML, CSS, and JavaScript.
 
 ## Let's connect

@@ -1,0 +1,16 @@
+{
+  "name": "Nguyen Tien Cuong",
+  "monogram": "ntc.",
+  "tagline": {
+    "en": "Backend systems. Thoughtful automation.",
+    "vi": "Hệ thống backend. Tự động hóa có chủ đích."
+  },
+  "colors": {
+    "carbon": "#191B19",
+    "navy": "#293846",
+    "olive": "#4D583C",
+    "moss": "#78816A",
+    "silver": "#A9ABA8",
+    "ivory": "#E3E0D6"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "brand": {
+    "name": "Nguyen Tien Cuong",
+    "tagline": { "en": "Backend systems. Thoughtful automation.", "vi": "Hệ thống backend. Tự động hóa có chủ đích." }
+  },
+  "availability": {
+    "status": "open-remote",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "hours": { "en": "Working hours by arrangement", "vi": "Giờ làm việc sẽ trao đổi" }
+  },
+  "analytics": {
+    "enabled": false,
+    "provider": "umami",
+    "scriptUrl": "",
+    "websiteId": "",
+    "domains": []
+  }
+}

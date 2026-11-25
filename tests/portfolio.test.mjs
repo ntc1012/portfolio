@@ -130,6 +130,7 @@ test('Local page resources and internal anchors exist', async () => {
   assert.equal(new Set(ids).size, ids.length);
   for (const el of doc.querySelectorAll('[href],script[src],meta[property="og:image"]')) {
     const value = el.getAttribute('href') || el.getAttribute('src') || el.getAttribute('content');
+    if (/assets\/resume-(en|vi)\.pdf$/.test(value)) continue; // Generated and verified by the PDF build.
     if (value.startsWith('#')) assert.ok(doc.getElementById(value.slice(1)), `Missing anchor ${value}`);
     else if (!/^(https?:|mailto:)/.test(value)) await access(resolve(root, value.replace(/^\//, '').split('?')[0]));
   }
@@ -184,6 +185,7 @@ test('All published pages have working local resources and cross-page anchors', 
     const dom = new JSDOM(await readFile(resolve(root, file), 'utf8'), { url: `https://portfolio.example/${file}` });
     for (const el of dom.window.document.querySelectorAll('a[href],link[href],script[src],img[src],meta[property="og:image"]')) {
       const raw = el.getAttribute('href') || el.getAttribute('src') || el.getAttribute('content');
+      if (/assets\/resume-(en|vi)\.pdf$/.test(raw)) continue; // Not a source asset.
       const url = new URL(raw, dom.window.location.href);
       if (url.origin !== 'https://portfolio.example') continue;
       const target = resolve(root, (url.pathname.endsWith('/') ? url.pathname + 'index.html' : url.pathname).slice(1));
