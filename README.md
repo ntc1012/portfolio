@@ -1,10 +1,10 @@
 # Hi, I'm Nguyen Tien Cuong
-https://portfolio-gray-nu-81.vercel.app/
 
 <img src="assets/avatar.svg" alt="My geometric cat avatar, wearing glasses and an olive jacket" width="150" align="right" />
 
-**Backend Developer at RedOne Media**, based in Vietnam.
+**Backend Developer · APIs, identity systems & automation**
 
+[Visit my portfolio](https://portfolio-gray-nu-81.vercel.app/)
 I build APIs, connect systems, and automate repetitive workflows with Python and Node.js. I'm especially interested in identity management, security, and tools that solve everyday problems.
 
 This repository is my personal portfolio: a place to introduce myself, share my work, and explain the thinking behind the systems I build.
