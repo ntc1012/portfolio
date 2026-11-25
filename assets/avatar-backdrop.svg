@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" fill="none">
+  <path class="avatar-coat" d="m30 240 10-60 50-37h60l50 37 10 60Z" fill="#4D583C"/>
+  <path class="avatar-shirt" d="m99 158-9 82h60l-9-82Z" fill="#191B19"/>
+  <path class="avatar-head" d="m54 89-9-66 48 32h54l48-32-9 66c6 11 9 24 9 38 0 43-31 65-75 65s-75-22-75-65c0-14 3-27 9-38Z" fill="#191B19"/>
+  <g class="avatar-glasses" stroke="#A9ABA8" stroke-width="3.5"><rect x="52" y="96" width="60" height="49" rx="16"/><rect x="128" y="96" width="60" height="49" rx="16"/><path d="M112 118h16"/></g>
+  <g class="avatar-eyes" stroke="#E3E0D6" stroke-width="3"><path d="M62 117h40m36 0h40"/></g>
+  <path class="avatar-nose" d="m114 155 6 6 6-6Z" fill="#A9ABA8"/>
+  <path class="avatar-mouth" d="M109 174h22" stroke="#A9ABA8" stroke-width="2"/>
+</svg>

@@ -1,0 +1,21 @@
+{
+  "name": "ntc-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Nguyen Tien Cuong's bilingual backend developer portfolio",
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "start": "node scripts/serve.mjs",
+    "build": "node scripts/build.mjs",
+    "assets": "node scripts/social-card.mjs",
+    "test": "node --test tests/*.test.mjs"
+  },
+  "engines": {
+    "node": ">=20.11"
+  },
+  "devDependencies": {
+    "jsdom": "26.1.0",
+    "sharp": "^0.34.5"
+  }
+}
