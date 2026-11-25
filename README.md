@@ -1,48 +1,39 @@
-# Nguyen Tien Cuong — Portfolio
+# Hi, I'm Nguyen Tien Cuong
 
-A static, bilingual portfolio for a backend developer. English is the default; Vietnamese is available through the EN / VI controls.
+<img src="assets/avatar.svg" alt="My geometric cat avatar, wearing glasses and an olive jacket" width="150" align="right" />
 
-## Run locally
+**Backend Developer at RedOne Media**, based in Vietnam.
 
-Use Node.js 20.11 or later:
+I build APIs, connect systems, and automate repetitive workflows with Python and Node.js. I'm especially interested in identity management, security, and tools that solve everyday problems.
 
-```sh
-npm install
-npm run dev
-```
+This repository is my personal portfolio: a place to introduce myself, share my work, and explain the thinking behind the systems I build.
 
-Open `http://127.0.0.1:4173`. The production website itself has no JavaScript package dependencies and can also be served by a static host.
+## Selected work
 
-## Build and check
+| Project | What it explores | Context |
+| --- | --- | --- |
+| **YouTube Automation Platform** | Video uploads and metadata management through the YouTube Data API, using FastAPI, PostgreSQL, and Node.js. | RedOne Media |
+| **[Identity & Access Management](https://github.com/ntc1012/DOAN_CYBERSEC)** | Connecting HR records to Active Directory with Flask, MySQL, and LDAP; account synchronization, two-factor authentication, and audit logging. | Personal project |
+| **Phishing URL Detection** | Combining a Random Forest classifier with Gemini explanations to make detection results easier to understand. | Personal project · team of two |
 
-```sh
-npm test
-npm run build
-```
+I've also built a [music streaming application](https://github.com/ntc1012/webplayingmusic_fixed) and a C# desktop application for camera shop management.
 
-The build copies only public site files into `dist/`. `npm run assets` regenerates the committed Open Graph PNG from its SVG source.
+## My toolkit
 
-## Experience
+- **Languages:** Python, JavaScript, C#
+- **Backend:** FastAPI, Flask, Node.js, Express, REST APIs
+- **Data:** PostgreSQL, MySQL, SQL, Sequelize
+- **Systems:** Active Directory, IAM, LDAP, networking fundamentals
 
-- Recruiter and Engineer perspectives; no authentication is required. Engineer reveals implementation notes and design considerations.
-- The homepage stays concise; `/projects/iam/` and `/projects/youtube-automation/` contain project stories with distinct titles and descriptions.
-- YouTube Automation is professional work at RedOne Media. IAM, phishing detection and the additional projects are personal work. Personal project does not imply sole authorship; the phishing project retains the supplied two-person team attribution.
-- Share perspectives through `#recruiter` and `#engineer`; use `?lang=vi#engineer` for Vietnamese technical content.
-- The opening is a brief greeting, a two-line introduction and two links, positioned toward the upper part of the hero to reduce the empty space below the header. A large avatar sits to the right and is cropped at the hero edge. On small screens it sits below the copy. The perspective selector appears within the work section; technical diagrams appear alongside projects.
-- The avatar uses its original charcoal face, silver glasses, ivory eye marks and olive jacket in both themes, with a subtle outline in dark mode. Only the bottom edge fades into the background. It has brief blink, gaze and click interactions. Reduced-motion preferences are respected.
-- Dark and light themes, keyboard-operable native controls, visible focus indicators, and a skip link.
-- Homepage sections have distinct visual structures: project gallery, olive-tinted About band with an experience timeline, toolkit grid, and a navy Contact band in both themes.
-- English Recruiter content remains readable without JavaScript.
-- `resume.html` is a bilingual public résumé. Its Print / Save PDF button opens the browser print dialog. The original private CV is not included in the repository.
+## About this portfolio
 
-## Content
+A brief introduction leads into selected projects, my experience, and the tools I use. Dedicated project pages cover implementation details and design considerations.
 
-Main content is in `index.html`; project stories are in `projects/*/index.html`; Vietnamese translations and shared behavior are in `script.js`. Résumé content is in `resume.html`, with corresponding translations in `script.js`. Language and perspective are retained in links between pages. `assets/avatar.svg` provides the original static avatar; `assets/avatar-backdrop.svg` provides the transparent background variant. The hero has an inline version of the background variant for animation and theme colors.
+- English by default, with a Vietnamese version.
+- Recruiter and Engineer perspectives for a quick overview or a closer technical look.
+- A custom SVG avatar, light and dark themes, and reduced-motion support.
+- Built with HTML, CSS, and JavaScript.
 
-IAM links to `ntc1012/DOAN_CYBERSEC`. Implementation notes were checked against `app.py` and `sync_hr_ad.py`: Flask, MySQL, ldap3, AD synchronization, TOTP and audit routes. YouTube Studio fallback is described as in development. No unverified model performance or business metrics are claimed. Private repositories are not exposed as public source links.
+## Let's connect
 
-## Vercel
-
-Import this repository as a static project. The committed `vercel.json` uses `npm run build` and publishes `dist/`. No server, database, or runtime environment variables are needed. Deployment is not performed by the local build.
-
-Before public release, visually review both languages at mobile and desktop widths, test the print layout, confirm project facts and certifications, and check the social preview at the final domain. Browser preview was unavailable in the implementation environment; DOM tests do not verify visual layout or real keyboard focus behavior.
+[Email](mailto:ntc10122003@gmail.com) · [LinkedIn](https://www.linkedin.com/in/c%C6%B0%E1%BB%9Dng-nguy%E1%BB%85n-ti%E1%BA%BFn-8510b5452/) · [GitHub](https://github.com/ntc1012)
